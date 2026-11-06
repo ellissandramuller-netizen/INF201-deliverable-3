@@ -22,8 +22,7 @@ class Character:
 
     def attack(self, target) -> None:
         """Attack and deal damage to target character"""
-        target._hp -= self.damage
-        target._hp = max(target._hp, 0)  # Target hp cannot end up lower than 0
+        target.take_damage(self.damage)
 
     def take_damage(self, amount: int) -> None:
         """Reduce HP when the character takes damage"""
@@ -50,3 +49,8 @@ class Character:
     def hp(self) -> int:
         """Public read-only property to inspect HP without allowing direct, unsafe edits."""
         return self._hp
+
+    @property
+    def is_alive(self) -> bool:
+        """Check whether the character is alive"""
+        return self._hp > 0
