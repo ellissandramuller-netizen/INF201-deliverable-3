@@ -29,6 +29,11 @@ class Character:
         """Reduce HP when the character takes damage"""
         self._hp = max(self._hp - amount, 0)
 
+    def heal(self, amount: int) -> None:
+        """Restore HP without exceeding maximum HP"""
+        self._hp = min(self._hp + amount, self.hp_max)
+
+
     def introduce(self) -> None:
         """Creates string that introduces character"""
         print(f"Hi, my name is {self.name}!")
