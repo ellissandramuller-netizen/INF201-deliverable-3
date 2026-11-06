@@ -25,6 +25,10 @@ class Character:
         target._hp -= self.damage
         target._hp = max(target._hp, 0)  # Target hp cannot end up lower than 0
 
+    def take_damage(self, amount: int) -> None:
+        """Reduce HP when the character takes damage"""
+        self._hp = max(self._hp - amount, 0)
+
     def introduce(self) -> None:
         """Creates string that introduces character"""
         print(f"Hi, my name is {self.name}!")
