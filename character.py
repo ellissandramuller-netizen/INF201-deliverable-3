@@ -27,7 +27,13 @@ class Character:
 
     def attack(self, target) -> None:
         """Attack and deal damage to target character"""
-        target.take_damage(self.damage)
+
+        if self.weapon is not None:
+            damage = self.weapon.roll_damage()
+        else:
+            damage = self.damage
+
+        target.take_damage(damage)
 
     def take_damage(self, amount: int) -> None:
         """Reduce HP when the character takes damage"""
@@ -66,9 +72,9 @@ class Warrior(Character):
     """A character with armor that reduces incoming damage"""
 
     def __init__(self, name: str, hp_max: int = 100,
-                 damage: int = 10, armor: int = 5) -> None:
+                 damage: int = 10, armor: int = 5, weapon=None) -> None:
 
-        super().__init__(name, hp_max, damage)
+        super().__init__(name, hp_max, damage, weapon)
 
         self.armor = armor
 
@@ -83,9 +89,9 @@ class Mage(Character):
 
     def __init__(self, name: str, hp_max: int = 100,
                  damage: int = 10, mana: int = 30,
-                 mana_max: int = 30) -> None:
+                 mana_max: int = 30, weapon=None) -> None:
 
-        super().__init__(name, hp_max, damage)
+        super().__init__(name, hp_max, damage, weapon)
         self.mana = mana
         self.mana_max = mana_max
 
