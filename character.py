@@ -74,3 +74,26 @@ class Warrior(Character):
         actual_damage = max(amount - self.armor, 0)
         super().take_damage(actual_damage)
 
+class Mage(Character):
+    """A character that uses mana for magical attacks"""
+
+    def __init__(self, name: str, hp_max: int = 100,
+                 damage: int = 10, mana: int = 30,
+                 mana_max: int = 30) -> None:
+
+        super().__init__(name, hp_max, damage)
+        self.mana = mana
+        self.mana_max = mana_max
+
+    def attack(self, target) -> None:
+        """Attack using magic when enough mana is available"""
+
+        if self.mana >= 10:
+            self.mana -= 10
+            target.take_damage(self.damage * 2)
+        else:
+            super().attack(target)
+            self.mana = min(self.mana + 5, self.mana_max)
+
+
+
