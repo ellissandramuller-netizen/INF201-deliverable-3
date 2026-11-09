@@ -1,0 +1,61 @@
+*   7ed0e13 - signehoelevensen, 5 minutes ago : Merge pull request #8 from ellissandramuller-netizen/signe-final-corrections
+|\  
+| * 3f7e157 - signehoelevensen, 6 minutes ago : Fix notebook text and add PDF
+|/  
+*   78c4f5e - signehoelevensen, 57 minutes ago : Merge pull request #7 from ellissandramuller-netizen/signe-task5-notebook
+|\  
+| * 1e52444 - signehoelevensen, 59 minutes ago : Add Task 5 demonstrations and AI declaration
+|/  
+* 39a1d20 - Ellissandra Muller, 2 hours ago : Git log file
+* 54e3371 - Ellissandra Muller, 2 hours ago : Add notebook demonstrations and results for Tasks 1-4
+*   4db07dc - Ellissandra Muller, 4 hours ago : Merge branch 'main' of https://github.com/ellissandramuller-netizen/INF201-deliverable-3
+|\  
+| *   27b43c4 - signehoelevensen, 4 hours ago : Merge pull request #6 from ellissandramuller-netizen/signe-requirements
+| |\  
+| | * c0f3231 - signehoelevensen, 4 hours ago : Update requirements for virtual environment
+| |/  
+* / fbf7105 - Ellissandra Muller, 4 hours ago : Notebook task 1 + fix in character file
+|/  
+*   b0fae1b - signehoelevensen, 4 hours ago : Merge pull request #5 from ellissandramuller-netizen/signe-notebook
+|\  
+| * f176b00 - signehoelevensen, 4 hours ago : Update notebook with saved demonstrations
+* | a2da1a3 - signehoelevensen, 4 hours ago : Merge pull request #4 from ellissandramuller-netizen/signe-notebook
+|\| 
+| * 345429b - signehoelevensen, 4 hours ago : Add Dice and Weapon demonstrations to notebook
+|/  
+*   e3a763e - signehoelevensen, 5 hours ago : Merge pull request #3 from ellissandramuller-netizen/signe-battle-fix
+|\  
+| * e4271ea - signehoelevensen, 5 hours ago : Refactor battle functions into Battle class
+* | bc909a3 - Ellissandra Muller, 5 hours ago : Implement Warrior Mage and weapon integration
+* | d751446 - Ellissandra Muller, 5 hours ago : Added weapon as argument
+* | e71c262 - Ellissandra Muller, 6 hours ago : Implement mage subclass
+* | aedba2b - Ellissandra Muller, 7 hours ago : Merge branch 'main' of https://github.com/ellissandramuller-netizen/INF201-deliverable-3
+|\| 
+| *   28cd7c6 - signehoelevensen, 7 hours ago : Merge pull request #1 from ellissandramuller-netizen/signe-game
+| |\  
+| | * f6ab9ff - signehoelevensen, 7 hours ago : Complete battle simulation and add documentation
+| | *   202d842 - signehoelevensen, 8 hours ago : Merge remote-tracking branch 'origin/main' into signe-game
+| | |\  
+| | |/  
+| |/|   
+| | * 48552c5 - signehoelevensen, 5 days ago : Implement Weapon class
+| | * 73b2dc1 - signehoelevensen, 5 days ago : Implement Dice class
+* | | 8080825 - Ellissandra Muller, 7 hours ago : Task 4 - Warrior subclass
+|/ /  
+* |   30e26d5 - ellissandramuller-netizen, 3 days ago : Task 1 finished: Merge character class and methods into main
+|\ \  
+| |/  
+|/|   
+| * 517df1f - Ellissandra Muller, 3 days ago : Task 1: change attack method and add is_alive property
+| * da6dce7 - Ellissandra Muller, 3 days ago : Task 1: write and test heal method
+| * 80c0734 - Ellissandra Muller, 3 days ago : Task 1: Add and test attack method
+| * 5099403 - Ellissandra Muller, 4 days ago : Given game code added to folder and character file
+| *   10476a4 - Ellissandra Muller, 5 days ago : Merge branch 'main' into elli-character
+| |\  
+| |/  
+|/|   
+* | 732e1f1 - Ellissandra Muller, 5 days ago : Add project requirements
+| * 2523622 - Ellissandra Muller, 5 days ago : Downloads and req. file
+|/  
+* c281c72 - Ellissandra Muller, 5 days ago : Set up project structure for Deliverable 3
+* 400cd5e - ellissandramuller-netizen, 5 days ago : Initial commit
