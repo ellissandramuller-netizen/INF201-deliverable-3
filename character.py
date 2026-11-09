@@ -1,3 +1,4 @@
+# Task 1
 # Gitt kode fra oppgavebeskrivelseside i canvas:
 
 # Object-oriented game simulator
@@ -54,3 +55,22 @@ class Character:
     def is_alive(self) -> bool:
         """Check whether the character is alive"""
         return self._hp > 0
+
+# Task 3 
+
+class Warrior(Character):
+    """A character with armor that reduces incoming damage"""
+
+    def __init__(self, name: str, hp_max: int = 100,
+                 damage: int = 10, armor: int = 5) -> None:
+
+        super().__init__(name, hp_max, damage)
+
+        self.armor = armor
+
+    def take_damage(self, amount: int) -> None:
+        """Reduce incoming damage based on armor"""
+
+        actual_damage = max(amount - self.armor, 0)
+        super().take_damage(actual_damage)
+
