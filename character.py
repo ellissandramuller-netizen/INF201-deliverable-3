@@ -1,13 +1,15 @@
 # Task 1
 # Gitt kode fra oppgavebeskrivelseside i canvas:
 
+# task 4 - added weapon as arg
+
 # Object-oriented game simulator
 # Turid Torheim, NMBU, 2026
 
 class Character:
     """Represents a character in the RPG"""
 
-    def __init__(self, name: str, hp_max: int = 100, damage: int = 10) -> None:
+    def __init__(self, name: str, hp_max: int = 100, damage: int = 10, weapon=None) -> None:
         """
         Initialise the Character
 
@@ -15,11 +17,13 @@ class Character:
             name (str): The name of the character.
             hp_max (int): Max hit points (default = 100)
             damage (int): Damage delt when character attacks (default = 10)
+            weapon: Optional weapon equipped by the character.
         """
         self.name = name
         self._hp = hp_max  # Note: _hp indicated private attribute
         self.hp_max = hp_max
         self.damage = damage
+        self.weapon = weapon
 
     def attack(self, target) -> None:
         """Attack and deal damage to target character"""
