@@ -1,7 +1,5 @@
-# Task 1
-# Gitt kode fra oppgavebeskrivelseside i canvas:
-
-# task 4 - added weapon as arg
+# Task 1 and Task 3 - Character
+# Based on starter code provided by Turid Torheim, NMBU, 2026
 
 # Object-oriented game simulator
 # Turid Torheim, NMBU, 2026
@@ -16,7 +14,7 @@ class Character:
         Args:
             name (str): The name of the character.
             hp_max (int): Max hit points (default = 100)
-            damage (int): Damage delt when character attacks (default = 10)
+            damage (int): Damage dealt when character attacks (default = 10)
             weapon: Optional weapon equipped by the character.
         """
         self.name = name
@@ -50,7 +48,7 @@ class Character:
 
     def __repr__(self) -> str:
         """Representation of character object"""
-        return f"<Character name={self.name} hp={self.hp} damage={self.damage}>)"
+        return f"<Character name={self.name} hp={self.hp} damage={self.damage}>"
 
     def __str__(self) -> str:
         """String representation of character object"""
@@ -66,7 +64,7 @@ class Character:
         """Check whether the character is alive"""
         return self._hp > 0
 
-# Task 3 
+# Task 4 - Character specialization 
 
 class Warrior(Character):
     """A character with armor that reduces incoming damage"""
